@@ -44,4 +44,4 @@ jobs:
           export FQDN=$(az containerapp show -n devops-app -g devsecops-lab --query properties.configuration.ingress.fqdn -o tsv)
           echo "FQDN: $FQDN"
           WEEK1_APP=$(curl -X POST -H "Authorization: Bearer $AZURE_ACCESS_TOKEN" -d "https://$FQDN" https://devsecops-ver.azurewebsites.net/api/week1-app)
-          echo "Week1 app upload: $WEEK1_APP"       
+          echo "Week1 app upload: $WEEK1_APP"             
