@@ -8,7 +8,6 @@ pass_list = ["pass1", "pass2", "pass3", "pass4", "pass5","admin"]
 
 for user in users_list:
     for password in pass_list:
-        print (user)
         data = {
             "username": user,
             "password": password
